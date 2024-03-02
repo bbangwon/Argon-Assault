@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +5,9 @@ public class PlayerControls : MonoBehaviour
 {
     [SerializeField]
     InputAction movement;
+
+    [SerializeField]
+    InputAction fire;
 
     [SerializeField]
     float controlSpeed = 10f;
@@ -39,11 +41,13 @@ public class PlayerControls : MonoBehaviour
     private void OnEnable()
     {
         movement.Enable();
+        fire.Enable();
     }
 
     private void OnDisable()
     {
         movement.Disable();
+        fire.Disable();
     }
 
     // Update is called once per frame
@@ -51,9 +55,10 @@ public class PlayerControls : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
-    private void ProcessRotation()
+    void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -68,7 +73,7 @@ public class PlayerControls : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         xThrow = movement.ReadValue<Vector2>().x;
         yThrow = movement.ReadValue<Vector2>().y;
@@ -82,5 +87,13 @@ public class PlayerControls : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    void ProcessFiring()
+    {
+        if(fire.ReadValue<float>() > 0.5)
+        {
+            print("Pew pew");
+        }
     }
 }

@@ -1732,6 +1732,31 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 0
     m_Flags: 0
+  fire:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: Button
+    m_Id: 22588ae4-3b1d-40ce-80b5-c3afce67f8e7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f9d75cf8-e28c-4def-ab8a-bb7660643f84
+      m_Path: <Keyboard>/leftCtrl
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    - m_Name: 
+      m_Id: a15c9149-7889-41d4-8ee6-4e3365ca929d
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    m_Flags: 0
   controlSpeed: 30
   xRange: 10
   yRange: 7
