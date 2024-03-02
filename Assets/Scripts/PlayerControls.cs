@@ -23,7 +23,7 @@ public class PlayerControls : MonoBehaviour
     float controlPitchFactor = -10f;
 
     [SerializeField]
-    float positionYawFactor = -5f;
+    float positionYawFactor = 2f;
 
     [SerializeField]
     float controlRollFactor = -20f;
