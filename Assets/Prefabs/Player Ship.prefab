@@ -1609,8 +1609,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 943033633794360322}
-  - {fileID: 1558883532830887328}
   - {fileID: 9126962455725959148}
+  - {fileID: 1558883532830887328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7736344963902922800
@@ -1760,6 +1760,9 @@ MonoBehaviour:
   controlSpeed: 30
   xRange: 10
   yRange: 7
+  lasers:
+  - {fileID: 8664869543689735521}
+  - {fileID: 1383998572574435117}
   positionPitchFactor: -2
   controlPitchFactor: -10
   positionYawFactor: 2
@@ -2628,6 +2631,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
+--- !u!1 &8664869543689735521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7504748421463074447, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
+  m_PrefabInstance: {fileID: 1160226781819612142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9126962455725959148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7976033146512591874, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
@@ -2690,6 +2698,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
+--- !u!1 &1383998572574435117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7504748421463074447, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
+  m_PrefabInstance: {fileID: 8868374586342277538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1558883532830887328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7976033146512591874, guid: 3e2be5cba75f1b9458869f716fe125f7, type: 3}
