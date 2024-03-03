@@ -1409,7 +1409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &943033633794360322
 Transform:
   m_ObjectHideFlags: 0
@@ -1588,6 +1588,9 @@ GameObject:
   - component: {fileID: 7736344963902922800}
   - component: {fileID: 2787844950929521683}
   - component: {fileID: 8695078134042567425}
+  - component: {fileID: 1291921374179821069}
+  - component: {fileID: -6515826444030768178}
+  - component: {fileID: -3504636652068813674}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1764,9 +1767,69 @@ MonoBehaviour:
   - {fileID: 8664869543689735521}
   - {fileID: 1383998572574435117}
   positionPitchFactor: -2
-  controlPitchFactor: -10
   positionYawFactor: 2
+  controlPitchFactor: -10
   controlRollFactor: -20
+--- !u!65 &1291921374179821069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466480892875150956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.3428, y: 1.9003435, z: 10.801089}
+  m_Center: {x: -0.038866043, y: -0.41741878, z: 0.0000047683716}
+--- !u!114 &-6515826444030768178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466480892875150956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83502a653db3154a9a9f395af5e07fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-3504636652068813674
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466480892875150956}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7047603144109334568
 GameObject:
   m_ObjectHideFlags: 0
