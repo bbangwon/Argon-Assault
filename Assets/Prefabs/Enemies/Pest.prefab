@@ -820,7 +820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7981285304248906887
 Transform:
   m_ObjectHideFlags: 0
@@ -1093,6 +1093,7 @@ GameObject:
   - component: {fileID: 4745244769012892548}
   - component: {fileID: 5139196941165003550}
   - component: {fileID: 2314483055685728387}
+  - component: {fileID: 1265207829068097}
   m_Layer: 0
   m_Name: Pest
   m_TagString: Untagged
@@ -1178,10 +1179,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4800f59ad6a744e479cde43a50bf59d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3005380157890838446, guid: 75089275a18789141a4eeb1abecb38fe, type: 3}
+  deathFX: {fileID: 3005380157890838446, guid: 75089275a18789141a4eeb1abecb38fe, type: 3}
   hitVFX: {fileID: 3005380157890838446, guid: 859c614ece66a084bafe60647351f8a3, type: 3}
   scorePerHit: 10
   hitPoints: 2
+--- !u!65 &1265207829068097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577994530848688254}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.085112, y: 2.8066294, z: 10.785946}
+  m_Center: {x: 0, y: -0.00000071525574, z: -0.000006914139}
 --- !u!1 &5612044130128876341
 GameObject:
   m_ObjectHideFlags: 0
